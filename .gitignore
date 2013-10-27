@@ -73,3 +73,5 @@ local.properties
 #Self
 /Bibliotheken
 /TickyTack
+/AquaCal
+.gitignore
