@@ -29,6 +29,10 @@ public class MainActivity extends Activity implements OnClickListener {
 		date = (TextView) findViewById(R.id.date);
 		heart = (ImageView) findViewById(R.id.herz);
 		heart.setOnClickListener(this);
+		date.setOnClickListener(this);
+		ueber.setText("Ich liebe dich mein Schatz");
+		unter.setText("Dein Sören <3");
+		date.setText("14. April 2013");
 	}
 
 	private void dateDiv() {
@@ -111,7 +115,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			ueber.setText("Ich liebe dich mein Schatz");
 			unter.setText("Dein Sören <3");
 			date.setText("14. April 2013");
-			date.setOnClickListener(this);
+			
 			
 			break;
 		case (R.id.date):

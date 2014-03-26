@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JHG</string>
+    <string name="action_settings">Settings</string>
+    <color name="background">#ffffffff</color>
+    <color name="text">#ffff517f</color>
+    <string name="ueberschrift">25 Jahre Julia</string>
+    <string name="desc">geschenk</string>
+    <string name="from1">Herzlichen Glückwunsch zum Geburtstag wünschen dir:</string>
+    <string name="from2">Stefana, Bernd, Sören &amp; Jonas &lt;3</string>
+
+</resources>

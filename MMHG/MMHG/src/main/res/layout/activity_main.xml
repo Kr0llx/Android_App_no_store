@@ -11,13 +11,13 @@
     tools:context=".MainActivity" >
 
     <ImageView
-        android:id="@+id/herz"
+        android:id="@+id/geschenk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/herz_t" 
-        android:contentDescription="@string/desc"/>
+        android:contentDescription="@string/desc"
+        android:src="@drawable/geschenk2" />
 
     <TextView
         android:id="@+id/ueberschrift"
@@ -27,7 +27,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:gravity="center"
-        android:text=""
+        android:text="@string/ueberschrift"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold" />
 
@@ -35,20 +35,9 @@
         android:id="@+id/unterschrift"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/geschenk"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="21dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ueberschrift"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:gravity="center"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textSize="@dimen/activity_horizontal_margin" />
 
 </RelativeLayout>

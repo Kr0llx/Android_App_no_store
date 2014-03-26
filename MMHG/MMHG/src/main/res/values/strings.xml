@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MMHG</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <color name="background">#FF2020</color>
+    <string name="ueberschrift">Wir wünschen dir alles Gute zum Geburtstag!</string>
+    <string name="desc">geschenk</string>
+
+</resources>

@@ -3,21 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:layout_centerHorizontal="true"
     tools:context=".MainActivity" >
 
     <ImageView
-        android:id="@+id/herz"
+        android:id="@+id/geschenk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/first"
         android:layout_centerVertical="true"
-        android:src="@drawable/herz_t" 
-        android:contentDescription="@string/desc"/>
+        android:layout_alignRight="@+id/ueberschrift"
+        android:layout_alignEnd="@+id/ueberschrift"
+        android:layout_alignLeft="@+id/ueberschrift"
+        android:layout_alignStart="@+id/ueberschrift" />
 
     <TextView
         android:id="@+id/ueberschrift"
@@ -25,30 +25,31 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="30dp"
+        android:textSize="@android:dimen/app_icon_size"
         android:gravity="center"
-        android:text=""
+        android:text="@string/ueberschrift"
+        android:textColor="@color/text"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/unterschrift"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="64dp"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ueberschrift"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textSize="@dimen/activity_horizontal_margin" />
+        android:id="@+id/unter1"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/geschenk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/unter2"
+        android:gravity="center"
+        android:layout_marginTop="-15dp"
+        android:layout_below="@+id/unter1"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
